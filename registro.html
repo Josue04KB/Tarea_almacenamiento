@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingreso de Datos de Clientes</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- Este es el div donde se encuentra todo el formulario de registro de cleinte -->
+    <div class="container">
+        <h2>Ingrese sus datos personales:</h2>
+        <form id="clientForm">
+            <!-- Cada uno de estos "label" son los nombres de los campos para ingresar datos -->
+            <label for="cedula">Cédula:</label>
+            <!-- Los input son los campos donde se ingresaran datos solicitados -->
+            <input type="text" placeholder="Ingrese su número de cedula" id="cedula" name="cedula" required>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" placeholder="Ingrese sus apellidos" id="apellidos" name="apellidos" required>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" placeholder="Ingrese sus nombres" id="nombres" name="nombres" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" placeholder="Ingrese su dirección" id="direccion" name="direccion" required>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="text" placeholder="Ingrese su numero de telefono" id="telefono" name="telefono" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" placeholder="Ingrese su correo electrónico" id="email" name="email" required>
+            <!-- Este el boton que permitira enviar los datos -->
+            <button type="login-button">Enviar</button>
+        </form>
+    </div>
+    <!-- Toda la validacion -->
+    <script src="validacion.js"></script>
+</body>
+</html>
